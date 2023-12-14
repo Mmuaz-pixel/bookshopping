@@ -1,0 +1,112 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../Book Shopping/css/login_style.css">
+	<!-- bootstrap core css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<!-- font awesome style -->
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+  
+	<!-- Custom styles for this template -->
+	<!-- <link href="css/style.css" rel="stylesheet" /> -->
+	<!-- responsive style -->
+	<link href="css/responsive.css" rel="stylesheet" />
+
+
+  
+</head>
+
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-12 col-lg-10">
+				<div class="wrap d-md-flex">
+					<div class="text-wrap p-4 p-lg-5 text-center d-flex align-items-center order-md-last">
+						<div class="text w-100">
+							<h4>Welcome to Online Book Shop</h4>
+							<p>Don't have an account?</p>
+							<button type="submit" class="btn btn-white btn-outline-white" (click)="signup()"
+								class="form-control btn btn-primary submit px-3"><a class="nav-link" href="signup.html">Sign Up</a></button>
+						</div>
+					</div>
+					<div class="login-wrap p-4 p-lg-5">
+						<div class="d-flex">
+							<div class="w-100">
+								<h3 class="mb-4">Sign In</h3>
+							</div>
+						</div>
+						<form [formGroup]="loginval" class="signin-form" (ngSubmit)="onSubmit()">
+							<div class="form-group mb-3">
+								<label class="label" for="password"> Email
+								</label>
+								<input type="text" class="form-control"
+									[ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+									id="email"
+									pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" placeholder="Email"
+									formControlName="email">
+								<div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+									<div *ngIf="f.email.errors.required">Email is required</div>
+									<div *ngIf="f.email.errors.email">
+										Email must be a valid email address
+									</div>
+								</div>
+							</div>
+							<div class="form-group mb-3">
+								<label class="label" for="password"> Password
+								</label>
+								<input type="password" class="form-control"
+									[ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+									id="password" placeholder="Password" formControlName="password">
+
+								<div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+									<div *ngIf="f.password.errors.required">Password is required</div>
+									<div *ngIf="f.password.errors.minlength">Password must be at least 6 characters
+									</div>
+								</div>
+							</div>
+							<!-- <div class="form-group mb-3">
+								<label class="label" for="role"> Select Your Role
+								</label>
+								<select class="form-select"
+									[ngClass]="{ 'is-invalid': submitted && f.select_role.errors }"
+									aria-placeholder="Select Role" formControlName="select_role"
+									style="border-radius: 50px;">
+									<option value="" selected>Select Role </option>
+									<option value="1"> Admin </option>
+									<option value="2"> User </option>
+								</select>
+
+								<div *ngIf="submitted && f.select_role.errors " class="invalid-feedback">
+									<div *ngIf="f.select_role.errors.required">Select Role
+									</div>
+								</div>
+							</div> -->
+							<div class="text-center mt-3" style="position:relative;">
+								<button class="btn btn-primary mr-1" style="margin-left: 3%;"><a class="nav-link" id="SubmitBtn" href="index.html">Sign In</a></button>
+							</div>
+							<!-- <div class="form-group d-md-flex">
+								<div class="w-50 text-left">
+									<label class="checkbox-wrap checkbox-primary mb-0">Remember Me
+										<input type="checkbox" checked>
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="w-50 text-md-right">
+									<a href="#">Forgot Password?</a>
+								</div>
+							</div> -->
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script type="module" src="./js/login.js"></script>

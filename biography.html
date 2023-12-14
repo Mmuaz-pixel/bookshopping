@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>MP BookStore</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- Font Awesome styles -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .book {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .book img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .book h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .book p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .book a {
+      display: inline-block;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 5px 10px;
+      text-decoration: none;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .book a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- Header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              MP BookStore
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link pl-lg-0" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categories.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+              </li>
+              <form class="search_form">
+                <input type="text" class="form-control" placeholder="Search here...">
+                <button class="" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login/Signup</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="textbooks-section">
+        <div class="container">
+          <h2>Biography Books</h2>
+          <p>Explore our collection of biography books:</p>
+    
+          <div class="book">
+            <img src="book7.jpg" alt="Biography Book 1">
+            <h3>Steve Jobs: The Biography</h3>
+            <p>Author: Walter Isaacson</p>
+            <p>ISBN: 978-1451648539</p>
+            <p>Price: $19.99</p>
+            <a href="#">Add to Cart</a>
+          </div>
+    
+          <div class="book">
+            <img src="book8.jpg" alt="Biography Book 2">
+            <h3>The Diary of a Young Girl</h3>
+            <p>Author: Anne Frank</p>
+            <p>ISBN: 978-0307594006</p>
+            <p>Price: $14.99</p>
+            <a href="#">Add to Cart</a>
+          </div>
+    
+          <!-- Add more biography books with details as needed -->
+        </div>
+      </section>
+  </div>
+
+  <!-- History Books Section -->
+ 
+
+  <!-- Footer Section -->
+  <!-- ... -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By Mudra Parikh</a>
+      </p>
+    </div>
+  </footer>
+  <script type="module" src="./js/addingBook.js"></script>
+</body>
+
+</html>
